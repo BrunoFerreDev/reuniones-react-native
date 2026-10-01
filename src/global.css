@@ -1,9 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-  --font-display:
-    Spline Sans, Inter, ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji,
-    Segoe UI Symbol, Noto Color Emoji;
-  --font-mono:
-    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
-  --font-rounded: 'SF Pro Rounded', 'Hiragino Maru Gothic ProN', Meiryo, 'MS PGothic', sans-serif;
-  --font-serif: Georgia, 'Times New Roman', serif;
+  --font-display: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --color-primary: #059669;
+  --color-primary-dark: #047857;
+  --color-primary-light: #ecfdf5;
+  --color-primary-border: #a7f3d0;
+  --color-bg: #f8fafc;
+  --color-surface: #ffffff;
+  --color-border: #e2e8f0;
+  --color-text-main: #0f172a;
+  --color-text-muted: #64748b;
 }
+
+body, html, #root {
+  background-color: #f8fafc;
+  color: #0f172a;
+  font-family: var(--font-display);
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+/* Pure CSS utility fallbacks for web */
+.bg-slate-50 { background-color: #f8fafc !important; }
+.bg-white { background-color: #ffffff !important; }
+.bg-slate-900 { background-color: #0f172a !important; }
+.bg-emerald-600 { background-color: #059669 !important; }
+.bg-emerald-700 { background-color: #047857 !important; }
+.bg-emerald-50 { background-color: #ecfdf5 !important; }
+.bg-emerald-100 { background-color: #d1fae5 !important; }
+.bg-rose-50 { background-color: #fef2f2 !important; }
+.bg-rose-600 { background-color: #e11d48 !important; }
+.bg-amber-50 { background-color: #fffbeb !important; }
+.bg-amber-600 { background-color: #d97706 !important; }
+
+.border-slate-100 { border-color: #f1f5f9 !important; }
+.border-slate-200 { border-color: #e2e8f0 !important; }
+.border-emerald-200 { border-color: #a7f3d0 !important; }
+.border-emerald-300 { border-color: #6ee7b7 !important; }
+.border-rose-200 { border-color: #fecaca !important; }
+.border-amber-200 { border-color: #fde68a !important; }
+
+.text-slate-900 { color: #0f172a !important; }
+.text-slate-800 { color: #1e293b !important; }
+.text-slate-700 { color: #334155 !important; }
+.text-slate-600 { color: #475569 !important; }
+.text-slate-500 { color: #64748b !important; }
+.text-slate-400 { color: #94a3b8 !important; }
+.text-white { color: #ffffff !important; }
+.text-emerald-800 { color: #065f46 !important; }
+.text-emerald-700 { color: #047857 !important; }
+.text-emerald-600 { color: #059669 !important; }
+.text-rose-800 { color: #9f1239 !important; }
+.text-rose-700 { color: #be123c !important; }
+.text-rose-600 { color: #e11d48 !important; }
+.text-amber-800 { color: #92400e !important; }
+.text-amber-700 { color: #b45309 !important; }
+.text-amber-600 { color: #d97706 !important; }
+
+.rounded-2xl { border-radius: 1rem !important; }
+.rounded-xl { border-radius: 0.75rem !important; }
+.rounded-lg { border-radius: 0.5rem !important; }
+.rounded-full { border-radius: 9999px !important; }
+
+.shadow-sm { box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05) !important; }
+.shadow-md { box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1) !important; }
